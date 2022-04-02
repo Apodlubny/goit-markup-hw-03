@@ -15,15 +15,25 @@ body {
   background-color: var(--primary-white);
   color: var(--primary-text-color);
   font-size: 14px;
+  margin: 0;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 .href-deco {
   text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* оформление шапки */
@@ -72,8 +82,13 @@ body {
 /* hero section */
 .hero {
   background-color: var(--primary-grey);
+  text-align: center;
+  margin-bottom: 94px;
 }
 .hero .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-white);
   font-weight: 900;
   font-size: 44px;
@@ -83,10 +98,17 @@ body {
   text-transform: uppercase;
 }
 .hero .hero-button {
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 0;
+
   background-color: var(--accent-color);
   color: var(--primary-white);
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
@@ -103,6 +125,14 @@ body {
 .section-item {
   color: var(--title-color);
 }
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.section,
+.do-section {
+  margin-bottom: 94px;
+}
 
 .section-title,
 .team-section-title {
@@ -113,6 +143,8 @@ body {
   letter-spacing: 0.03em;
 }
 .section-item {
+  margin-bottom: 10px;
+  margin-top: 0;
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -122,18 +154,25 @@ body {
   color: var(--primary-text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Our team section */
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--primary-grey);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: tomato;
 }
 .team-section {
   background-color: var(--tertiary-bgc);
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 .team-member {
   color: var(--primary-grey);
@@ -156,6 +195,7 @@ body {
 .logo-footer {
   color: var(--primary-white);
 }
+
 .address {
   color: var(--primary-white);
   text-decoration: inherit;
